@@ -1,0 +1,25 @@
+h1 {
+    color: var(--ink);
+    margin-bottom: 0;
+    margin-left: -0.5rem;
+    font-size: clamp(4rem, 9vw, 8rem);
+    font-weight: 600;
+    letter-spacing: -0.085em;
+    line-height: 0.88;
+}
+
+.period {
+    color: #c8b59d;
+}
+
+.role {
+  
+    color: var(--muted);
+    font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+    line-height: 1.6;
+    
+}
+
+
+
+

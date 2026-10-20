@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio</title>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+		<style>
+			:root { --max-width: 1000px; } 
+:root {
+  --bgwhite: #f0f0f0;
+  --black: #1a1a1a;
+  --primary: #3b82f6;
+  --accent: rgb(34, 197, 94);
+}
+
+			html,body { height:100%; margin:0; overflow-x:hidden; }
+			body { font-family: 'Inter', Arial, sans-serif; background:var(--bgwhite); color:var(--black); }
+			
+			.container { max-width:var(--max-width); margin:0 auto; background:var(--bgwhite); border: 2px solid var(--black);}
+			
+			.bordercontainer { max-width:var(--max-width); margin:0 auto; padding: 1.25rem; }
+
+			header.site-header { text-align:left; margin-top:2rem; }
+			header.site-header h1 { margin:0; font-size:2.5rem; font-weight:700; letter-spacing: -0.02em; }
+			header.site-header h2 { margin:0; font-size:1; font-weight:100; margin-bottom: 2rem;}
+			header.site-header h3 { text-align:center; margin:0; font-size:1; font-weight:100; margin-bottom: 2rem;}
+
+			.center-line {
+ 			width: 20%;       /* or any width you want */
+ 			margin: 100px auto; /* centers it horizontally and adds vertical space */
+ 			border: 1px solid var(--black); /* line color and thickness */ 
+			 }
+
+
+
+            .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 10px;}
+    
+
+            .div2 {
+         	grid-column: span 2 / span 2;}
+        
+
+            .card {
+			border: 2px solid var(--black);
+			background-color: var(--black);
+			
+			
+            }
+			      .card img:hover {
+            opacity: 1;
+        }
+
+            .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+			opacity:0.3;
+			transition: opacity 0.3s;}
+
+
+	        .info-bar {
+            background-color: var(--black);
+            color: var(--bgwhite);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px; }
+
+			 .info-bar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: opacity 0.3s;
+        }
+
+        .info-bar a:hover {
+            opacity: 0.1;
+        }
+
+		.viewer-wrapper {
+			display: flex;
+			justify-content: center;
+			width: 100vw;
+			margin-left: calc(50% - 50vw);
+			position: relative;
+			z-index: 10;
+			margin-top: -150px;
+			margin-bottom: -100px;
+		}
+
+		model-viewer {
+			display: block;
+			width: 100%;
+			max-width: 100%;
+			height: 600px;
+		}
+
+		header.site-header h2 {
+			margin: 0;
+			font-size: 1;
+			font-weight: 100;
+			margin-bottom: 0.5rem;
+		}
+
+		.center-line {
+			width: 20%;
+			margin: 20px auto;
+			border: 1px solid var(--black);
+		}
+
+		</style>
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+				    <div class="info-bar">
+        <span>Welcome to my page!</span>
+        <nav>
+            <a href="/sketches">sketches</a>
+			<a >|</a>
+			<a href="/about">about</a>
+        </nav>
+    </div>
+				<div class="bordercontainer">
+                <header class="site-header">
+				<h1>ROBIN KRASNIQI</h1>
+				<h2>industrial and automotive designer</h2>
+				
+<div class="viewer-wrapper">
+  <model-viewer
+    src="/assets/model.glb"
+    alt="3D model"
+    auto-rotate
+    camera-controls>
+  </model-viewer>
+</div>
+				<hr class="center-line">
+				<h3>Projects</h3>
+                <div class="grid">
+                <div class="card"><a href="/ui.html"><img src="/assets/main/uigrid.png" ></a></div>
+				<div class="card"><a href="/lenk.html"><img src="/assets/main/lenkgrid.png" ></a></div>
+				<div class="card"><a href="/sig.html"><img src="/assets/main/siggrid.png" ></a></div>
+
+				 <div></div>
+				 
+				
+         </div>
+		 
+		 
+			</header>
+			<main>
+
+			</main>
+		</div>
+		 <div class="info-bar">	</div>
+		
+	</body>
+</html>

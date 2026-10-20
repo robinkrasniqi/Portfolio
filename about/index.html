@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About — Robin Krasniqi</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="/RK-Portfolio/css/style.css" rel="stylesheet">
+	<script defer src="/RK-Portfolio/js/scrollbar.js"></script>
+	<style>
+		.about-grid {
+			display: grid;
+			grid-template-columns: minmax(0, 1fr) minmax(180px, 0.55fr);
+			gap: clamp(2rem, 6vw, 5rem);
+			align-items: start;
+		}
+
+		.about-photo-placeholder {
+			display: grid;
+			min-height: 260px;
+			place-items: center;
+			border: 1px dashed var(--muted);
+			border-radius: 4px;
+			color: var(--muted);
+			text-align: center;
+		}
+
+		.about-placeholder-list {
+			padding-left: 1.25rem;
+			line-height: 1.9;
+		}
+
+		.about-programs {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.75rem;
+			padding: 0;
+			list-style: none;
+		}
+
+		.about-programs li {
+			border: 1px solid var(--line);
+			border-radius: 999px;
+			padding: 0.55rem 0.9rem;
+			color: var(--muted);
+		}
+
+		.about-socials {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem 2rem;
+		}
+
+		.about-socials span {
+			color: var(--ink);
+		}
+
+		.about-socials a {
+			color: #c8b59d;
+		}
+
+		@media (max-width: 640px) {
+			.about-grid {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="info-bar">
+			<span><a href="/RK-Portfolio/home/">&larr; back</a></span>
+				<nav>
+				<a href="/RK-Portfolio/one-offs/">one-offs</a>
+				<a>|</a>
+				<a href="/RK-Portfolio/about/">about</a>
+			</nav>
+		</div>
+
+		<main class="content-container" style="padding-top: clamp(3rem, 8vw, 6rem); padding-bottom: clamp(3rem, 8vw, 6rem);">
+			<section class="about-grid" aria-labelledby="about-title">
+				<div>
+					
+				
+
+					<p class="eyebrow">About me</p>
+					<div>			
+					<ul class="about-programs">
+					<li>Sketcher</li>
+					<li>Blender Wizard</li>
+					<li>Curious</li>
+					<li>Detail-Driven</li>
+					<li>Multidisciplinary</li>
+					</div>
+					
+					<h2 id="about-title">Robin Krasniqi</h2>
+					
+					<p>I'm an industrial designer and surface modeler based in Germany. 
+					I have a strong interest in designing and developing interactive products and vehicles. </p>
+	
+
+				</ul>
+				</div>
+				
+				<!--
+				<div class="about-photo-placeholder" role="img" aria-label="Placeholder for a portrait photo">
+					
+				</div>
+			-->
+
+			</section>
+
+
+
+			<section aria-labelledby="software-title">
+			
+				<p class="eyebrow">About this Website</p>
+				
+				<p><em>This experimental website was created with some coding assistance from generative AI. I am not a web designer.</em></p>
+
+			</section>
+
+				<section aria-labelledby="software-title">
+				<hr class="center-line">
+				<p class="eyebrow">Tools</p>
+				<h3 id="software-title">Programs I use</h3>
+				<ul class="about-programs">
+					<li>Alias</li>
+					<li>Blender</li>
+					<li>CATIA</li>
+					<li>Inventor</li>
+					<li>Keyshot</li>
+					<li>Figma</li>
+				</ul>
+			</section>
+
+			<section aria-labelledby="socials-title">
+				<hr class="center-line">
+				<p class="eyebrow">Find me online</p>
+				<h3 id="socials-title">Socials</h3>
+				<div class="about-socials">
+					<a href="https://www.linkedin.com/in/robin-krasniqi-1815a029b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+					<a href="mailto:robinkrq@gmail.com">Mail</a>
+				</div>
+			</section>
+		</main>
+
+		<div class="info-bar"></div>
+	</div>
+</body>
+
+</html>

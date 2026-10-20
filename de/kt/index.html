@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Konstruktier</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="/RK-Portfolio/css/style.css" rel="stylesheet">
+	<script defer src="/RK-Portfolio/js/scrollbar.js"></script>
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<style>
+	.header-thumb {
+		background-image: url('/RK-Portfolio/kt/kthumb.png');
+	}
+</style>
+
+<body>
+	<div class="container">
+		<div class="info-bar">
+			<span><a href="/RK-Portfolio/home/"> &lt;- back</a></span>
+			<nav>
+				<a href="/RK-Portfolio/one-offs/">one-offs</a>
+				<a>|</a>
+				<a href="/RK-Portfolio/about/">about</a>
+			</nav>
+		</div>
+
+		<header class="site-header">
+			<div class="header-thumb"></div>
+		</header>
+
+		<main>
+			
+		<section class="content-container intro-grid">
+			
+				<div>
+					<p class="eyebrow">One-week student project</p>
+					<h2>KONSTRUKTIER</h2>
+					
+					<div>
+						<p>The goal of this project was to create an engaging educational toy made from wood. <strong>Konstruktier</strong> introduces children to the principles of structural engineering.</p>
+						<div class="spacer" style="margin: calc(var(--spacer) * 3) auto;"></div>
+					</div>
+					<p class="credit">In collaboration with interior architecture students<br><strong>Alexandra Gerbel</strong> &middot; <strong>Lilli Weise</strong></p>
+				</div>
+
+
+				<div class="tool">
+					<img src="/RK-Portfolio/assets/iconblender.png" alt="Blender">
+					<span>3D design and visualization</span>
+				</div>
+			
+		</section>
+
+		<section class="content-container">
+			<div class="center-line"></div>
+			<p class="eyebrow">01 / Process</p>
+			<h3>THE STEAM APPROACH</h3>
+			<div class="gallery-grid" id="steam"></div>
+		</section>
+
+		<section class="content-container">
+			<div class="center-line"></div>
+			<p class="eyebrow">02 / The game</p>
+			<div class="content-grid" style="--columns: 1fr 2fr;">
+				<div>
+					<div class="gallery-grid" id="modell"></div>
+					<p class="credit">Prototype</p>
+				</div>
+				<div>
+					<h3>How it works.</h3>
+					<p>Konstruktier is a wooden construction game for children aged four and up. It playfully introduces them to the principles of <strong>building physics</strong>. Using a limited set of components, players build a <strong>portable structure</strong> while learning about <strong>load-bearing walls</strong> and how <strong>forces are distributed</strong> within a building.</p>
+					<p><strong>Challenge cards</strong> add variety: each card shows a sequence of colors that determines the order in which the floor tiles can be used. Animals appear between levels to complicate the construction process. The <strong>Giraffe</strong> is enormous and needs two stories of space. The <strong>Monkey</strong> clings to the facade and makes the building wobble. The <strong>Bear</strong> pushes upward, forcing the floor above it to tilt.</p>
+				</div>
+			</div>
+
+			<div class="spacer"></div>
+			<div class="center-align" style="--center-margin: ; flex-wrap: wrap;">
+				<img src="/RK-Portfolio/kt/ktcards (1).jpg" class="center-img" style="border-radius:6%;" alt="Konstruktier challenge card">
+				<img src="/RK-Portfolio/kt/ktcards (2).jpg" class="center-img" style="border-radius:6%;" alt="Konstruktier challenge card">
+				<img src="/RK-Portfolio/kt/ktcards (3).jpg" class="center-img" style="border-radius:6%;" alt="Konstruktier challenge card">
+			</div>
+		</section>
+
+		<section class="content-container">
+			<div class="center-line"></div>
+			<p class="eyebrow">03 / Post-Project Work</p>
+			<h3>THE BOX</h3>
+			<div class="center-align" style="--center-margin:5%; background: var(--line); border-radius: 20px;">
+				<div class="hover-image image-hover">
+					<img id="box" src="/RK-Portfolio/kt/box.png" data-hover-src="/RK-Portfolio/kt/box.gif" alt="Konstruktier box">
+				</div>
+			</div>
+		</section>
+	</main>
+		<div class="info-bar"></div>
+	</div>
+
+	<div class="lightbox" id="lightbox">
+		<div class="lightbox-content">
+			<button class="lightbox-close" aria-label="Close lightbox">✕</button>
+			<img id="lightbox-img" src="" alt="Preview">
+			<button class="lightbox-nav lightbox-prev" aria-label="Previous image">❮</button>
+			<button class="lightbox-nav lightbox-next" aria-label="Next image">❯</button>
+		</div>
+	</div>
+
+	<script>
+		const galleryImages = {
+			steam: [
+				'/RK-Portfolio/kt/ktsteam.png',
+				'/RK-Portfolio/kt/ktprinzip.png',
+				'/RK-Portfolio/kt/ktsketch.png',
+			],
+			modell: [
+				'/RK-Portfolio/kt/ktmodell.jpeg',
+			],
+		};
+	</script>
+	<script src="js/gallery.js"></script>
+	<script src="/RK-Portfolio/js/gallery-layout.js"></script>
+</body>
+
+</html>
